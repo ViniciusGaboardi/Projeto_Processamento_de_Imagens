@@ -3,7 +3,7 @@
 ## Integrantes
 
 * [Nome]
-* [Nome]
+* Victor Hugo Chrisosthemos Teixeira
 * Vinícius Gaboardi Silva
 
 ## Sobre o projeto
