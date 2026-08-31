@@ -264,12 +264,7 @@ O TGIF fornece máscaras das regiões adulteradas, permitindo comparar a localiz
         ┌───────┴────────┐
         ▼                ▼
      Original        Adulterada
-                         │
-                         ▼
-                 Localização futura
-                         │
-                         ▼
-                  Máscara/heatmap
+                  
 ```
 
 A solução poderá ser dividida inicialmente nos seguintes módulos:
