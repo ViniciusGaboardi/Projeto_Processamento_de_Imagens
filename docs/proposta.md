@@ -12,8 +12,6 @@ O problema principal será:
 
 **Dada uma fotografia digital, determinar se ela apresenta indícios de adulteração realizada por uma ferramenta de IA generativa.**
 
-Como extensão, pretende-se investigar a possibilidade de localizar a região da fotografia que sofreu a alteração.
-
 Esse problema pertence ao campo de *digital image forensics*. Trabalhos recentes mostram que técnicas modernas de *inpainting* generativo representam um desafio para métodos tradicionais de localização de falsificações.
 
 ---
