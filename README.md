@@ -2,7 +2,7 @@
 
 ## Integrantes
 
-* [Nome]
+* João Eduardo Cardoso
 * Victor Hugo Chrisosthemos Teixeira
 * Vinícius Gaboardi Silva
 
