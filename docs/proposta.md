@@ -52,8 +52,6 @@ Desenvolver e avaliar um processo computacional para detectar indícios de adult
 
 6. Avaliar o desempenho do método utilizando métricas quantitativas.
 
-7. Como evolução do projeto, investigar técnicas capazes de localizar a região modificada.
-
 ---
 
 ## 4. Delimitação do escopo
