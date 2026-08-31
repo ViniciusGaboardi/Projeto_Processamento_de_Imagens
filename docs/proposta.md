@@ -157,9 +157,6 @@ Extração/representação de características
 Análise ou classificação
     ↓
 Original × Adulterada
-    ↓
-[Etapa futura]
-Localização da região suspeita
 ```
 
 ### 7.1 Carregamento e padronização
