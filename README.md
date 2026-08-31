@@ -16,8 +16,6 @@ O foco inicial está em fotografias originalmente reais que tiveram regiões adi
 
 Dada uma fotografia digital, queremos determinar se ela apresenta indícios de adulteração realizada por IA generativa.
 
-Como evolução, o projeto também investigará a possibilidade de localizar a região modificada.
-
 ## Entrada e saída
 
 Entrada:
