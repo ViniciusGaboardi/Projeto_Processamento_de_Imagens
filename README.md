@@ -6,6 +6,9 @@
 * Victor Hugo Chrisosthemos Teixeira
 * Vinícius Gaboardi Silva
 
+### Link do Vídeo no Youtube
+https://youtu.be/lpn4-aHTndk
+
 ## Sobre o projeto
 
 Este projeto investiga técnicas de Processamento Digital de Imagens e visão computacional para detectar adulterações realizadas por ferramentas de Inteligência Artificial generativa em fotografias digitais.
