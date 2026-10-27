@@ -7,6 +7,11 @@
 * Vinícius Gaboardi Silva
 
 ### Link do Vídeo no Youtube
+
+Vídeo 2 (27/10/2026):<br>
+https://youtu.be/zYr7sQTDFxA
+
+Vídeo 1:<br>
 https://youtu.be/lpn4-aHTndk
 
 ## Sobre o projeto
