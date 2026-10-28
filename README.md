@@ -1,5 +1,104 @@
 # Detecção Forense de Adulterações em Fotografias Realizadas por Ferramentas de IA Generativa
 
+## Integrantes
+
+* João Eduardo Cardoso
+* Victor Hugo Chrisosthemos Teixeira
+* Vinícius Gaboardi Silva
+
+### Link do Vídeo no Youtube
+
+Vídeo 2 (27/10/2026):<br>
+https://youtu.be/zYr7sQTDFxA
+
+Vídeo 1:<br>
+https://youtu.be/lpn4-aHTndk
+
+## Sobre o projeto
+
+Este projeto investiga técnicas de Processamento Digital de Imagens e visão computacional para detectar adulterações realizadas por ferramentas de Inteligência Artificial generativa em fotografias digitais.
+
+O foco inicial está em fotografias originalmente reais que tiveram regiões adicionadas, removidas ou substituídas utilizando técnicas de *generative inpainting*.
+
+## Problema
+
+Dada uma fotografia digital, queremos determinar se ela apresenta indícios de adulteração realizada por IA generativa.
+
+## Entrada e saída
+
+Entrada:
+
+`Fotografia digital`
+
+Saída inicial:
+
+`Original / Adulterada`
+
+Saída futura:
+
+`Máscara ou mapa indicando regiões suspeitas`
+
+## Dataset
+
+Será utilizado inicialmente o **TGIF — Text-Guided Inpainting Forgery Dataset**, que contém fotografias modificadas utilizando Stable Diffusion 2, Stable Diffusion XL e Adobe Firefly, além das respectivas máscaras das regiões adulteradas.
+
+## Pipeline preliminar
+
+```text
+Imagem
+  ↓
+Pré-processamento
+  ↓
+Extração de características
+  ↓
+Detecção/classificação
+  ↓
+Original × Adulterada
+  ↓
+Localização da região suspeita
+```
+
+## Tecnologias previstas
+
+* Python
+* OpenCV
+* NumPy
+* scikit-image
+* scikit-learn
+* Matplotlib
+* PyTorch, caso necessário
+
+## Estado atual
+
+**M1 — definição e investigação da proposta.**
+
+Atividades atuais:
+
+* levantamento bibliográfico;
+* investigação do dataset;
+* seleção de imagens;
+* planejamento do pipeline;
+* experimentos preliminares.
+
+## Organização
+
+```text
+docs/       documentação
+images/     imagens utilizadas nos experimentos
+src/        código-fonte
+notebooks/  experimentos exploratórios
+tests/      testes
+```
+
+## Documentação
+
+A proposta detalhada está disponível em:
+
+`docs/proposta.md`
+
+
+# Detecção Forense de Adulterações em Fotografias Realizadas por Ferramentas de IA Generativa - M2
+
 Projeto acadêmico da disciplina de Processamento de Imagens — 2026/2.
 
 ## Objetivo
@@ -19,7 +118,7 @@ Projeto_Processamento_de_Imagens/
 │   ├── masks_testing/
 │   └── sd2-sp_testing/
 ├── src/
-│   ├── __init__.py 
+│   ├── __init__.py
 │   ├── metrics.py
 │   ├── inspect_dataset.py
 │   ├── validate_dataset.py
@@ -33,20 +132,34 @@ Projeto_Processamento_de_Imagens/
 ├── results/
 ├── tests/
 │   └── test_metrics.py
-├── notebooks/
 ├── requirements.txt
 └── README.md
 ```
 
 A pasta `images/` contém as fotografias originais, as máscaras de referência e as versões manipuladas. A pasta `src/` contém os scripts de inspeção, validação, comparação e visualização, além da implementação compartilhada das métricas. A pasta `tests/` contém testes automatizados. Os resultados quantitativos são exportados para arquivos CSV em `results/`.
 
-## Requisitos
+
+### Requisitos
 
 - Python 3.12.5.
 - Pip para instalação das dependências.
-- Conjunto de dados extraído e organizado conforme a estrutura descrita acima.
+- Conjunto de dados baixado e extraído conforme a estrutura descrita neste documento.
 
-As dependências e suas versões estão registradas em `requirements.txt`.
+As dependências e suas versões estão especificadas no arquivo `requirements.txt`.
+
+### Preparação do conjunto de dados
+
+O conjunto de dados utilizado nos experimentos pode ser obtido pelo [repositório público de imagens](https://cloud.ilabt.imec.be/index.php/s/xEeAzrY7ES9KA8o).
+
+Baixe os seguintes arquivos:
+
+- `masks/masks_testing.tar.gz`
+- `orig/orig_testing.tar.gz`
+- `sd2-sp/sd2-sp_testing.tar.gz`
+
+Extraia os arquivos na pasta `images/`, preservando a estrutura de diretórios esperada pelo projeto. Após a extração, verifique se as pastas `masks_testing/`, `orig_testing/` e `sd2-sp_testing/` estão presentes dentro de `images/`.
+
+O conjunto de dados não é incluído no repositório Git devido ao seu tamanho. Para reproduzir os experimentos, é necessário baixá-lo e prepará-lo conforme estas instruções.
 
 ## Instalação
 
@@ -168,3 +281,7 @@ Para reproduzir os experimentos:
 4. Preserve os arquivos CSV gerados e a versão do código utilizada nos experimentos.
 
 Consulte o relatório técnico para a descrição detalhada da metodologia, dos resultados, da análise do caso de falha e das limitações do pipeline.
+
+## Uso de IA generativa
+
+Ferramentas de IA generativa foram utilizadas como apoio à elaboração inicial da proposta e pesquisa de referências. As informações utilizadas são verificadas pelo grupo por meio das fontes técnicas e dos experimentos desenvolvidos.

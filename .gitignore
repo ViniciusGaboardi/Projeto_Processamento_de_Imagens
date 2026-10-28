@@ -1,0 +1,18 @@
+.venv/
+pycache/
+*.py[cod]
+.pytest_cache/
+.idea/
+
+data/*
+!data/README.md
+
+Ignorar resultados gerados, mas manter os CSVs dos experimentos
+
+results/*
+!results/*.csv
+!results/.gitkeep
+
+Dataset de imagens, obtido externamente
+
+images/
